@@ -7,6 +7,9 @@ from wsgiref.simple_server import make_server
 def application(env, start_response):
     """
     This function presents a Web Application.
+    To interact with WSGI Web Server, Web Application needs to be WSGI compliant:
+    1. it must accept two arguments
+    2. second argument is callable
     :param env: a variable containing various information about the request
     :param start_response: is used to notify the server of the status of response and for setting various headers
     :return: WSGI server expects the return from application to be an iterable
