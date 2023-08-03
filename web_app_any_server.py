@@ -1,5 +1,5 @@
 # To run this application as an example
-# waitress-serve --listen=127.0.0.1:5000 predict:app
+# pip install waitress (if not installed)
 # waitress-serve --listen=127.0.0.1:8051 web_app_any_server:application
 # it will work on any WSGI complaint server
 
